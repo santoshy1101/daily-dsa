@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 1</title>
+</head>
+<script>
+    const arr = [2,4,6,8,0,22,4,6,7,9];
+    const findValue=()=>{
+        const input= document.getElementById("ind").value
+        if(input>0 && input<arr.length){
+            alert(`${arr[input]}`)
+        }
+        else{
+            alert("enter valid input")
+        }
+    }
+</script>
+<body>
+    <input type="text" id="ind">
+    <button onclick="findValue()">Search</button>
+</body>
+</html>
