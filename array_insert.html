@@ -6,7 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+
+
+   
+    const insertEl=()=>{
+    const arr=[23,4,5,6,78,4];
+    
+    let position = document.getElementById("position").value;
+    position=parseInt(position);
+    let el=document.getElementById("element").value;
+    el=parseInt(el)
+    if(position<arr.length && position>0){
+        for(let i=arr.length-1; i>=0; i--){
+        if(i>=position){
+            arr[i+1]=arr[i]
+            if(i===position){
+                arr[i]=el
+            }
+        }
+    }
+    // console.log(arr)
+    document.getElementById("after_loop").innerText=arr.join(" ")
+    alert( `element ${el} succesfully addded in array at position ${position} --> ${arr}`)
+    }else{
+        alert ("valid index number")
+    }
+    }
+   
+
+</script>
 <body>
+    <h2 id="before_loop">Curr_Arr => 23 4 5 6 78 4</h2>
+    <input type="number" id="position" placeholder="enter position">
+    <input type="number" id="element" placeholder="enter element">
+    <button onclick="insertEl()">Insert</button>
+    <h2 id="after_loop"></h2>
     
 </body>
 </html>
