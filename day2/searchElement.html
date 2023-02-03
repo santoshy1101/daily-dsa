@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const find=()=>{
+        const arr = [2,4,5,7,8,9];
+    const el=document.getElementById('search').value
+
+    for(let i=0; i<arr.length; i++) {
+        if(arr[i]==el){
+            alert(`element of ${el} index is ${i}`)
+            return
+        }
+    }
+    alert("element not found")
+    }
+   
+  
+</script>
+<body>
+    <input id="search" type="text" placeholder="plz enter the element" >
+    <button onclick="find()">Find</button>
+    
+</body>
+</html>
