@@ -7,58 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Daily Dsa Day 1</h1>
-
-    <h2>arr = [10,22,34,55,67,88]</h2>
-    <h>task 1 print all element</h3>
-    <h3>task 2 on postion 2 add 24 like</h3>
-                 <h3>[10,24,22,34,55,67,88] </h3>
-
-    <input type="text" placeholder="Enter postion" id ="position"/> <br> <br>
-    <input type="text" placeholder="Enter element" id = "element"/> <br> <br>
-    <span>     <button onclick="add_ele()">Add Element</button>      <button onclick="print()">Print All Eelement</button> 
-
-    </span> <br> <br>
-    <h1 id="add"></h1> 
-</body>
-<script >
-
-    const print= () => {
-        // task 1
-        let arr = [10,22,34,55,67,88]
-
-    for(let i=0; i<arr.length; i++){
-
-        document.write(`${arr[i]} <br/>`)
-
-    }
-    }
-
-    const add_ele=()=>{
-                // task 2
-                let ar = [10,22,34,55,67,88]
-
-        let p= + document.getElementById("position").value;
-        
-        let el = + document.getElementById("element").value;
-
-     for(let i=ar.length-1; i>=0; i--){
-
-        if(i>=p){
-            ar[i+1] = ar[i]
-            if(i===p){
-                ar[i]=el
-            }
-
-        }
-
-    }
-    document.getElementById("add").innerText = ar
-
-    }
     
-     
+</body>
+<!-- <script src="products.js"></script> -->
+<!-- <script src="stack.js"></script> -->
+<!-- <script src="reverseStr.js"></script> -->
+<!-- <script src="classStack.js"></script> -->
+<!-- <script src="queue.js"></script> -->
+<!-- <script src="rfQueue.js"></script> -->
+<!-- <script src="selectionSort.js"></script> -->
+<script src="index.js"></script>
 
-
-</script>
 </html>

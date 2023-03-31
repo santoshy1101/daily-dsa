@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        let queue = [];
+        let currentSize = queue.length;
+           let maxSize  = 5;
+
+          function enqueue(){
+            let newVal = document.querySelector("#el1").value
+            if(currentSize>=maxSize){
+                console.log("queue is full")
+            }else{
+                queue[currentSize] = newVal;
+                currentSize++;
+            }
+            
+          }
+
+          function dequeue(){
+            if(!isEmpty()){
+                currentSize--;
+                queue.length = currentSize
+            }else{
+                console.log("queue alredy empty")
+            }
+          }
+
+          function display(){
+            console.log(queue)
+          }
+
+          function front(){
+            if(!isEmpty()){
+                console.log(queue[0])
+            }
+            else{
+                console.log('queue already empty')
+            }
+          }
+
+          function rear(){
+            if(!isEmpty()){
+                console.log(queue[currentSize-1])
+            }else{
+                console.log('queue already empty')
+            }
+          }
+
+          function isEmpty(){
+            if(currentSize>0){
+                return false
+            }else{
+                return true
+            }
+          }
+
+        //   enqueue(23)
+        //   enqueue(43)
+        //   enqueue(33)
+
+          display()
+
+
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Enter queue element" id="el1">
+
+    <button onclick="enqueue()">Add element</button>
+    <button onclick="dequeue()">Remove element</button>
+    <button onclick="front()">Get front  element</button>
+    <button onclick="rear()">Get rear element</button>
+    <button onclick="display()">Display element</button>
+    
+</body>
+</html>

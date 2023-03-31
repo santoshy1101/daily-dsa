@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const deleteEl =()=>{
+        let arr = [2,4,6,43,5,9,];
+        let position = document.getElementById("position").value;
+        position=parseInt(position)
+        if( position<arr.length && position>0){
+    for(let i=position; i<arr.length-1; i++){
+        arr[i]=arr[i+1]
+    }
+    arr.pop()
+    document.getElementById("after_delete").innerText=`After Delete Data : ${arr.join(" ")}`
+    console.log(arr)
+    }
+    
+        }
+   
+</script>
+<body>
+    <h2>Berfore Delete Data : 2 4 6 43 5 9 </h2>
+    <input type="number" id="position" placeholder="enter delete element position">
+    <button onclick="deleteEl()">Delete</button>
+    <h2 id="after_delete"></h2>
+</body>
+</html>
