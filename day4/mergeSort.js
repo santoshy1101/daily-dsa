@@ -1,4 +1,4 @@
-let arr = [1,3,4,5,6,7,9];
+let arr = [1,3,4,5,6,7,9,2];
 
 let l =0;
 let r =arr.length-1;
@@ -13,6 +13,7 @@ function mergeSort(arr,l,r){
 }
 
 function merge(a,l,mid,r){
+    console.log(a,l,mid,r)
     let i = l;
     let j = mid+1;
     let k=l;
@@ -28,7 +29,7 @@ function merge(a,l,mid,r){
         }
         k++;
     }
-    if(mid>i){
+    if(i>mid){
         while(j<=r){
             tempArr[k]=a[j];
             k++; j++
@@ -39,8 +40,10 @@ function merge(a,l,mid,r){
             k++; i++
         }
     }
-    // return 
+    for (let k=l; k<=r;k++){
+        arr[k] = tempArr[k]
+    }
 }
 
 mergeSort(arr,l,r)
-console.log(arr);
+// console.log(arr);
