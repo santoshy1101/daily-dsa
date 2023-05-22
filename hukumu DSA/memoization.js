@@ -29,8 +29,9 @@ function stairs(n) {
 const t1 = performance.now()
 
 const r = stairs(5)
-// r
+console.log(r)
+// r 
 
 const t2 = performance.now()
 const time = t2 - t1
-// console.log(time)
+console.log(time)

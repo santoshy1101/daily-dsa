@@ -8,10 +8,20 @@ function fib(n){
         return 1
     }
     if(!obj[n]){
-        obj[n]=fib(n-1)+fib(n-2)
+        obj[n]=fib(n-1) + fib(n-2)
     }
-    else return obj[n]
+     return obj[n]
 }
 
-console.log(fib(25))
-console.log(obj)
+const t1 = performance.now()
+
+const r = fib(999)
+console.log(r)
+// r 
+
+const t2 = performance.now()
+const time = t2 - t1
+console.log(time)
+
+
+console.log("object",obj)
