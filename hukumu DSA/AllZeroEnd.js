@@ -1,4 +1,4 @@
-const arr=[1,0,2,0,3,8,90,6,0,8,9,0,8,0];
+const arr=[1,0,2,0,3,8,90];
 let count=0;
 
 for(let i=0; i<arr.length; i++){
