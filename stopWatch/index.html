@@ -1,0 +1,36 @@
+<html>
+    <head></head>
+    <body>
+        <div>
+            <h1>StopWatch</h1>
+            <h2>timer <span id="time">0</h2></>
+                <button onclick="start()">Start</button>
+                <button onclick="stop()">Stop</button>
+        </div>
+    </body>
+</html>
+<script>
+    let count =0;
+    let id;
+    const time = document.getElementById("time")
+    const stop =()=>{
+        console.log("stop")
+        clearInterval(id);
+    }
+    const start =()=>{
+        id= setInterval(()=>{
+        time.innerText= ++count
+        
+    },1000)
+
+    }
+    // console.log("render")
+
+    
+   
+
+  
+
+
+
+</script>
