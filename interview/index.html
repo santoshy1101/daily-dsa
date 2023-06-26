@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .parent{
-            display: flex;
-            height: 100vh;
-            justify-content: space-around;
-            background-color: red;
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        display: flex;
+        height: 100vh;
+        justify-content: space-around;
+        background-color: red;
 
-            .left{
-                background: gray;
-                height: 200px;
-                width: 100px;
-                /* border-top-right-radius:50% ; */
-               background-color: rgb(18, 112, 194);
-               border-top-right-radius: 20%;
-            }
-            .right{
-                background: rgb(55, 8, 211);
-                height: 200px;
-                width: 100px;
-                border-top-right-radius:50% ; 
-                /* border-top: 40px solid red;
-                /* border-top: 40px solid transparent; */
-                transition-duration: 1s;
-                &:hover{
-                    background-color: chartreuse;
-
-                }
-            }
+        .left {
+          background: gray;
+          height: 200px;
+          width: 100px;
+          /* border-top-right-radius:50% ; */
+          background-color: rgb(18, 112, 194);
+          border-top-right-radius: 20%;
         }
-  
+        .right {
+          background: rgb(55, 8, 211);
+          height: 200px;
+          width: 100px;
+          border-top-right-radius: 50%;
+          /* border-top: 40px solid red;
+                /* border-top: 40px solid transparent; */
+          transition-duration: 1s;
+          &:hover {
+            background-color: chartreuse;
+          }
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="parent">
-        <div class="left"></div>
-        <div class="right"></div>
+      <div class="left"></div>
+      <div class="right">
+        <img
+          src="https://i.ytimg.com/an_webp/fPuLnzSjPLE/mqdefault_6s.webp?du=3000&sqp=CPXSzaQG&rs=AOn4CLCHj7c79jqjJWjL5q0C5UlYdhIUhQ"
+          alt="" />
+      </div>
     </div>
-</body>
+  </body>
 </html>
 
 <script src="./index.js"></script>
