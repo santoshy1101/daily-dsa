@@ -35,4 +35,4 @@ sessionStorage.setItem("user", JSON.stringify(user))
 // Read an object from session storage
 const userObject = JSON.parse(sessionStorage.getItem('user'))
 console.log(userObject) 
-console.log("gello")
+console.log("gelo")
