@@ -25,7 +25,7 @@ sessionStorage.setItem("name", "John Doe");
 const user = {
   name: 'John Doe',
   age: 30,
-  city: 'San Francisco',
+  city: 'San Francisc',
 }
 sessionStorage.setItem("user", JSON.stringify(user))
 
